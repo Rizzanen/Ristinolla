@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ristinolla</title>
+    <link href="ristinolla.css" rel="stylesheet" />
+    <script src="ristinolla.js" rel="scriptfile"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>Ristinolla</h1>
+
+      <h2 id="ohje">Aloita peli valitsemalla ruutu</h2>
+
+      <p>Pelaaja 1 (aloittaja) = X</p>
+      <p>Pelaaja 2 = 0</p>
+
+      <h2 id="vuoro"></h2>
+      <br />
+      <div id="laatikot">
+        <input
+          type="text"
+          id="b1"
+          onclick="setValueB1(); winnerTest();"
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b2"
+          onclick="setValueB2(); winnerTest(); "
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b3"
+          onclick="setValueB3(); winnerTest();"
+          readonly
+        />
+        <br /><br />
+
+        <input
+          type="text"
+          id="b4"
+          onclick="setValueB4(); winnerTest();"
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b5"
+          onclick="setValueB5(); winnerTest();"
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b6"
+          onclick="setValueB6(); winnerTest();"
+          readonly
+        />
+        <br /><br />
+
+        <input
+          type="text"
+          id="b7"
+          onclick="setValueB7(); winnerTest();"
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b8"
+          onclick="setValueB8(); winnerTest();"
+          readonly
+        />
+
+        <input
+          type="text"
+          id="b9"
+          onclick="setValueB9(); winnerTest();"
+          readonly
+        />
+
+        <br />
+        <br />
+        <br />
+
+        <button id="resetGame" onclick="resetGame()">Aloita uusi peli</button>
+        <br />
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <footer>&copy;Aapo Rissanen</footer>
+  </body>
+</html>
